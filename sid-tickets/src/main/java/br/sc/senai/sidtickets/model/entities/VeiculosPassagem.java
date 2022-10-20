@@ -15,7 +15,7 @@ import java.util.Date;
 public class VeiculosPassagem {
     @Id
     @Column(length = 11, nullable = false, unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @ManyToOne
@@ -31,5 +31,11 @@ public class VeiculosPassagem {
 
     @Column(length = 11, nullable = false)
     private Date dataChegada;
+
+    @Column(length = 100, nullable = false)
+    private String local_partida;
+
+    @Column(length = 100, nullable = false)
+    private String local_chegada;
 
 }
