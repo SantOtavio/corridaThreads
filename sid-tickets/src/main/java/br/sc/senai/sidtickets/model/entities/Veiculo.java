@@ -24,9 +24,9 @@ public class Veiculo {
     @JoinColumn(name = "assentos_veiculo_id", referencedColumnName = "assentos_veiculo_id")
     @Column(nullable = false)
     private AssentosVeiculo assentosVeiculo;
-
-    @JoinColumn(name = "assentos_passageiro_id", referencedColumnName = "assentos_passageiro_id")
-    @Column(nullable = false)
-    private AssentosPassageiro assentosPassageiro;
+//
+//    @JoinColumn(name = "assentos_passageiro_id", referencedColumnName = "assentos_passageiro_id")
+//    @Column(nullable = false)
+//    private AssentosPassageiro assentosPassageiro;
 
 }
