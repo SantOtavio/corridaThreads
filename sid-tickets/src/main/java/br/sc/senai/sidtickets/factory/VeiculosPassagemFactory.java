@@ -9,9 +9,9 @@ public class VeiculosPassagemFactory {
             return null;
         }
         return switch (tipoVeiculo) {
-            case "Ônibus" -> new Onibus();
-            case "Trem" -> new Trem();
-            case "Avião" -> new Aviao();
+//            case "Ônibus" -> new Onibus();
+//            case "Trem" -> new Trem();
+//            case "Avião" -> new Aviao();
             default -> null;
         };
     }

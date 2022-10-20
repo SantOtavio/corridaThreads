@@ -18,8 +18,8 @@ public class VeiculosPassagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 11, nullable = false)
-    private Passagem passagemId;
+//    @Column(length = 11, nullable = false)
+//    private Passagem passagemId;
 
     @Column(length = 11, nullable = false)
     private Veiculo veiculoId;

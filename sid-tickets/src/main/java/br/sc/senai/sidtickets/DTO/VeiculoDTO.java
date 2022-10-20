@@ -7,6 +7,6 @@ import lombok.Getter;
 @Getter
 public class VeiculoDTO {
     private TipoVeiculo tipoVeiculo;
-    private String modeloVeiculo;
+    private String modelo;
     private AssentosVeiculo assentosVeiculo;
 }
