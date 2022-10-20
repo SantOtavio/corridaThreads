@@ -18,9 +18,11 @@ public class VeiculosPassagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
     @Column(length = 11, nullable = false)
     private Passagem passagemId;
 
+    @ManyToOne
     @Column(length = 11, nullable = false)
     private Veiculo veiculoId;
 
