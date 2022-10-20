@@ -21,12 +21,12 @@ public class Veiculo {
     @Column(length = 50, nullable = false)
     private String modeloVeiculo;
 
-    @JoinColumn(name = "assentos_veiculo_id", referencedColumnName = "assentos_veiculo_id")
-    @Column(nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "assentos_veiculo_id", referencedColumnName = "assentos_veiculo_id", nullable = false)
     private AssentosVeiculo assentosVeiculo;
-//
-//    @JoinColumn(name = "assentos_passageiro_id", referencedColumnName = "assentos_passageiro_id")
-//    @Column(nullable = false)
-//    private AssentosPassageiro assentosPassageiro;
+
+    @ManyToOne
+    @JoinColumn(name = "assentos_passageiro_id", referencedColumnName = "assentos_passageiro_id", nullable = false)
+    private AssentosPassageiro assentosPassageiro;
 
 }
